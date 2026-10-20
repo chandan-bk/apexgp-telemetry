@@ -1,0 +1,33 @@
+{
+  "name": "apexgp-telemetry",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "ApexGP Telemetry — Real-Time Motorsport IoT & 3D Digital Twin Simulator",
+  "main": "server.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "node server.js",
+    "start": "vite"
+  },
+  "keywords": [
+    "motorsport",
+    "telemetry",
+    "iot",
+    "threejs",
+    "digital-twin",
+    "esp32",
+    "engineering-analytics",
+    "bolt-new"
+  ],
+  "author": "Chandan B K",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.2"
+  }
+}
