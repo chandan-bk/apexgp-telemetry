@@ -818,6 +818,14 @@ class F1SimApp {
 }
 
 // Bootstrap application on page load
-window.addEventListener('DOMContentLoaded', () => {
-  window.f1App = new F1SimApp();
-});
+function initApexSim() {
+  if (!window.f1App) {
+    window.f1App = new F1SimApp();
+    window.apexApp = window.f1App;
+  }
+}
+if (document.readyState === 'loading') {
+  window.addEventListener('DOMContentLoaded', initApexSim);
+} else {
+  initApexSim();
+}
